@@ -8,11 +8,5 @@ import java.util.List;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Integer>{
-    List<Customer> findAll();
 
-    void save(Customer customer);
-
-    void deleteById(Integer customerId);
-
-    ThreadLocal<Object> findById(int customerId);
 }

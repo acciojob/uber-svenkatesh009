@@ -9,11 +9,5 @@ import com.driver.model.Driver;
 @Repository
 public interface DriverRepository extends JpaRepository<Driver, Integer>{
 
-    List<Driver> findAll();
 
-    void save(Driver driver);
-
-    ThreadLocal<Object> findById(int driverId);
-
-    void delete(Driver driver);
 }

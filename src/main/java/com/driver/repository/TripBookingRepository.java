@@ -5,7 +5,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TripBookingRepository extends JpaRepository<TripBooking, Integer>{
 
-    ThreadLocal<Object> findById(Integer tripId);
 
-    void save(TripBooking tripBooking);
 }
